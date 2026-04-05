@@ -1,8 +1,10 @@
+export const config = {
+  runtime: 'edge',
+};
 import { fetchMarineData } from '../src/marineApi';
-export const config = {runtime: 'edge',};
 
 export default async function handler(req: Request) {
-  const { searchParams } = new URL(req.url);
+  const { searchParams } = new URL(req.url); 
   const lat = parseFloat(searchParams.get('lat') || '');
   const lon = parseFloat(searchParams.get('lon') || '');
 
