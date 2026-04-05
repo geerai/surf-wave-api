@@ -1,7 +1,6 @@
 {
   "name": "surf-wave-api",
   "version": "1.0.0",
-  "type": "module",
   "dependencies": {
     "typescript": "^5.0.0"
   },
