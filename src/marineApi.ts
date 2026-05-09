@@ -52,7 +52,7 @@ export interface SurfApiResponse extends MarineApiResponse {
 }
 
 function buildUrl(lat: number, lon: number): string {
-  return `${BASE}?latitude=${lat}&longitude=${lon}&current=${CURRENT_VARS}&hourly=${HOURLY_VARS}&forecast_days=1&timezone=auto`
+  return `${BASE}?latitude=${lat}&longitude=${lon}&current=${CURRENT_VARS}&hourly=${HOURLY_VARS}&forecast_days=2&timezone=auto`
 }
 
 function classifyTideStage(height: number, heights: number[]): TideStage {
